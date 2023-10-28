@@ -17,7 +17,9 @@
     "url": "https://github.com/Melksedeque/api-rest-typescript/issues"
   },
   "dependencies": {
-    "fastify": "^4.24.3"
+    "fastify": "^4.24.3",
+    "knex": "^3.0.1",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@types/node": "^20.8.9",
