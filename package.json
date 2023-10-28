@@ -1,5 +1,29 @@
 {
+  "name": "api-rest-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melksedeque/api-rest-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Melksedeque/api-rest-typescript/issues"
+  },
   "dependencies": {
+    "fastify": "^4.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "tsx": "^3.14.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "homepage": "https://github.com/Melksedeque/api-rest-typescript#readme",
+  "description": ""
 }

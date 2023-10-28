@@ -1,12 +1,24 @@
-interface User {
-    birthDate: number
+import Fastify from 'fastify'
+
+const server = Fastify({
+    logger: true
+})
+
+server.get('/', async function handler(request, reply) {
+    return { hello: 'World!' }
+})
+
+const start = async () => {
+    try {
+        await server.listen({ port: 3000 })
+
+        const address = server.server.address()
+        const port = typeof address === 'string' ? address : address?.port
+    }
+    catch(err) {
+        server.log.error(err)
+        process.exit(1)
+    }
 }
 
-function calculateAge(user: User): number {
-    return new Date().getFullYear() - user.birthDate
-}
-
-const user1: User = {
-    birthDate: 1991
-}
-console.log(calculateAge(user1))
+start()
